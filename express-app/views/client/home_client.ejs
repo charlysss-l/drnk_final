@@ -1,0 +1,137 @@
+<!--head.js used to store head design-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= pageTitle%>
+    </title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/navbar.css" rel="stylesheet">
+    <link href="/css/intro.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--1st section-->
+    <section class="first-section">
+        <div class="sec1-content">
+            <video src="/images/INTRO.mp4" muted loop autoplay></video>
+            <h1 class="intro-text">Get <span class="span-text1">drnk</span></h1>
+
+        </div>
+    </section>
+
+    <%- include('../layouts/navigation.ejs')%>
+        <!--2nd section-->
+        <section class="second-section">
+            <div class="sec2-content">
+                <img class="sec2-img2" src="/images/img1.jpg">
+                <h1 class="sec2-text1"><a href="#">drnk</a></h1>
+                <p class="sec2-text2"> <a href="#">Shop Now</a></p>
+            </div>
+        </section>
+
+
+        <!--3rd section-->
+        <section class="third-section">
+            <div class="slide-container">
+
+                <!--slider link to img a-->
+                <span class="slider-span" id="slider-span1"></span>
+                <span class="slider-span" id="slider-span2"></span>
+                <span class="slider-span" id="slider-span3"></span>
+                <span class="slider-span" id="slider-span4"></span>
+                <span class="slider-span" id="slider-span5"></span>
+
+
+                <div class="image-slider">
+                    <!--product1-->
+                    <div class="slide-div" id="slide1">
+                        <img src="/images/tanduay-blue.png" alt="" class="img" id="img1">
+                        <a href="#slider-span1" class="button" id="button-1"></a>
+                    </div>
+
+                    <!--product2-->
+                    <div class="slide-div" id="slide2">
+                        <img src="/images/tanduay-light.png" alt="" class="img" id="img2">
+                        <a href="#slider-span2" class="button" id="button-2"></a>
+                    </div>
+
+                    <!--product3-->
+                    <div class="slide-div" id="slide3">
+                        <img src="/images/tanduay-red.png" alt="" class="img" id="img3">
+                        <a href="#slider-span3" class="button" id="button-3"></a>
+                    </div>
+
+                    <!--product4-->
+                    <div class="slide-div" id="slide4">
+                        <img src="/images/tanduay-white.png" alt="" class="img" id="img4">
+                        <a href="#slider-span4" class="button" id="button-4"></a>
+                    </div>
+
+                    <!--product5-->
+                    <div class="slide-div" id="slide5">
+                        <img src="/images/tanduay-yellow.png" alt="" class="img" id="img5">
+                        <a href="#slider-span5" class="button" id="button-5"></a>
+                    </div>
+                </div>
+
+                <!--text-->
+                <div class="sec3-text1">
+                    <h1>Choose your drink</h1>
+                </div>
+
+            </div>
+        </section>
+
+        <!--4th section-->
+        <section class="fourth-section">
+            <div class="sec4-content">
+                <div class="icons">
+
+                    <!--text-->
+                    <h1 class="sec4-text1">NICE TO MEET YOU!</h1>
+                    <h1 class="sec4-text2">TELL US YOUR <br>FAVORITE DRINK.</h1>
+
+                    <!--icons-->
+                    <ul>
+                        <li>
+                            <!--beer icon-->
+                            <a href="#">
+                                <img class="icon-beer" src="/images/beer.png">
+                            </a>
+                        </li>
+
+                        <li>
+                            <!--gin icon-->
+                            <a href="#">
+                                <img class="icon-gin" src="/images/gin.png">
+                            </a>
+                        </li>
+
+                        <li>
+                            <!--brandy icon-->
+                            <a href="#">
+                                <img class="icon-brandy" src="/images/brandy.png">
+                            </a>
+                        </li>
+
+                        <li>
+                            <!-- mix icon-->
+                            <a href="#">
+                                <img class="icon-mix" src="/images/mix-drinks.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        </div>
+        <!--/div for .container-->
+</body>
+
+</html>

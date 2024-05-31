@@ -1,0 +1,23 @@
+<nav class="menu">
+    <ul class="nav">
+        <li class="nav_item <%= path==='/' ? 'active' : ''%>">
+            <a class="nav_link" href="/">Home 
+                    <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav_item <%= path==='/shop' ? 'active' : ''%>">
+            <a class="nav_link" href="/shop">Shop 
+                    <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav_item <%= path==='/cart' ? 'active' : ''%>">
+            <a class="nav_link" href="/client/cart">Cart 
+                    <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav_item <%= path==='/about' ? 'active' : ''%>">
+            <a class="nav_link" href="/about">About
+                     <span class="sr-only">(current)</span></a>
+        </li>
+
+    </ul>
+</nav>

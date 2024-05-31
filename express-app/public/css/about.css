@@ -1,0 +1,541 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* brand-info*/
+
+.intro {
+    background-color: #20201F;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+
+
+/*get to know us*/
+
+.intro-title {
+    color: #F2EFEB;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    font-size: 100px;
+    text-transform: uppercase;
+    margin-left: 20rem;
+    margin-top: 15rem;
+}
+
+
+/* id link size and position */
+
+.who-link,
+.why-link,
+.how-link {
+    position: absolute;
+    margin-top: 26rem;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+
+/* id link each margin left */
+
+.who-link {
+    margin-left: 30rem;
+}
+
+.why-link {
+    margin-left: 43rem;
+}
+
+.how-link {
+    margin-left: 56rem;
+}
+
+
+/*link a */
+
+.who-link a,
+.why-link a,
+.how-link a {
+    color: #F2EFEB;
+    text-decoration: none;
+}
+
+
+/*link hover */
+
+.who-link a:hover,
+.why-link a:hover,
+.how-link a:hover {
+    color: #cca42e;
+}
+
+
+/*  WHO section */
+
+.brand-info1 {
+    background-color: #20201F;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+
+
+/*title */
+
+.who-title {
+    color: #F2EFEB;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    font-size: 180px;
+    margin-left: 31rem;
+    margin-top: 12rem;
+}
+
+
+/*info*/
+
+.who-p {
+    color: #F2EFEB;
+    position: absolute;
+    margin-top: 27rem;
+    font-size: 20px;
+    margin-left: 25rem;
+    width: 600px;
+    text-align: center;
+}
+
+
+/*  WHY section*/
+
+.brand-info2 {
+    background-color: #20201F;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+
+
+/*title */
+
+.why-title {
+    color: #F2EFEB;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    font-size: 180px;
+    margin-left: 33rem;
+    margin-top: 12rem;
+    text-transform: uppercase;
+}
+
+
+/*info */
+
+.why-p {
+    color: #F2EFEB;
+    position: absolute;
+    margin-top: 27rem;
+    font-size: 20px;
+    margin-left: 25rem;
+    width: 720px;
+    text-align: center;
+}
+
+
+/*HOW section*/
+
+.brand-info3 {
+    background-color: #20201F;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+
+
+/*title */
+
+.how-title {
+    color: #F2EFEB;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    font-size: 180px;
+    margin-left: 33rem;
+    margin-top: 12rem;
+    text-transform: uppercase;
+}
+
+
+/*info*/
+
+.how-p {
+    color: #F2EFEB;
+    position: absolute;
+    margin-top: 27rem;
+    font-size: 20px;
+    margin-left: 25rem;
+    width: 720px;
+    text-align: center;
+}
+
+
+/*title hover effect*/
+
+.who-title:hover,
+.why-title:hover,
+.how-title:hover {
+    color: #cca42e;
+}
+
+
+/*----------ABOUT US----------- */
+
+
+/* 1st section*/
+
+.title-section {
+    background-color: #20201F;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+
+
+/*text*/
+
+.sec1-text1 {
+    color: #F2EFEB;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100px;
+    margin-top: 15rem;
+    margin-left: 23rem;
+}
+
+
+/* Say hello link*/
+
+.sec1-content a {
+    color: #cca42e;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 40rem;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+
+/*say hello hover */
+
+.sec1-content a:hover {
+    color: #c8ad89;
+}
+
+
+/* fb link*/
+
+.fb-link {
+    color: #F2EFEB;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 37rem;
+    margin-left: 68rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 6px;
+}
+
+
+/*fb link hover*/
+
+.fb-link:hover {
+    color: #cca42e;
+}
+
+
+/* 2nd section*/
+
+.second-section {
+    background-color: #20201F;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+
+
+/*user profile*/
+
+.profile-img1 {
+    position: absolute;
+    margin-left: 7rem;
+    margin-top: 4rem;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+
+/*fave drink */
+
+.fave-drink-img1 {
+    position: absolute;
+    margin-left: 70rem;
+    margin-top: 2rem;
+    width: 300px;
+    height: 500px;
+}
+
+
+/*greetings */
+
+.name1 {
+    color: #F2EFEB;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 9rem;
+    margin-left: 27rem;
+    letter-spacing: 5px;
+}
+
+
+/*span name*/
+
+.span-text1 {
+    font-size: 40px;
+    color: #F2EFEB;
+    text-transform: uppercase;
+}
+
+
+/*info */
+
+.about1 {
+    color: #F2EFEB;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    width: 55rem;
+    position: absolute;
+    margin-top: 24rem;
+    margin-left: 18rem;
+    letter-spacing: 5px;
+}
+
+
+/* 3rd section*/
+
+.third-section {
+    background-color: #20201F;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+
+
+/*user profile*/
+
+.profile-img2 {
+    position: absolute;
+    margin-left: 40rem;
+    margin-top: 2rem;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+
+/*fave drink yakult*/
+
+.fave-drink-img2 {
+    position: absolute;
+    margin-left: 65rem;
+    margin-top: 8rem;
+    width: 250px;
+    height: 300px;
+}
+
+
+/*fave drink soju*/
+
+.fave-drink-img3 {
+    position: absolute;
+    margin-top: 3.5rem;
+    width: 600px;
+    height: 600px;
+}
+
+
+/*greetings */
+
+.name2 {
+    color: #F2EFEB;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: 20rem;
+    margin-left: 30rem;
+    letter-spacing: 5px;
+}
+
+
+/*span name*/
+
+.span-text2 {
+    font-size: 40px;
+    color: #F2EFEB;
+}
+
+
+/*info */
+
+.about2 {
+    color: #F2EFEB;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    width: 55rem;
+    position: absolute;
+    margin-top: 26.5rem;
+    margin-left: 25rem;
+    letter-spacing: 5px;
+}
+
+
+/* 4th section*/
+
+.fourth-section {
+    background-color: #20201F;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+
+
+/*user profile*/
+
+.profile-img3 {
+    position: absolute;
+    margin-left: 60rem;
+    margin-top: 6rem;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+
+/*fave drink */
+
+.fave-drink-img4 {
+    position: absolute;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    width: 230px;
+    height: 570px;
+}
+
+
+/*greetings */
+
+.name3 {
+    color: #F2EFEB;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: 18rem;
+    margin-left: 30rem;
+    letter-spacing: 5px;
+    text-align: right;
+}
+
+
+/*span name*/
+
+.span-text3 {
+    font-size: 40px;
+    color: #F2EFEB;
+}
+
+
+/*info */
+
+.about3 {
+    color: #F2EFEB;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    width: 59rem;
+    position: absolute;
+    margin-top: 26rem;
+    margin-left: 20rem;
+    letter-spacing: 5px;
+}
+
+
+/* 5th section*/
+
+.fifth-section {
+    background-color: #20201F;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+
+
+/*user profile*/
+
+.profile-img5 {
+    position: absolute;
+    margin-left: 7rem;
+    margin-top: 4rem;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+
+/*fave drink */
+
+.fave-drink-img5 {
+    position: absolute;
+    margin-left: 70rem;
+    margin-top: 2rem;
+    width: 200px;
+    height: 500px;
+}
+
+
+/*greetings */
+
+.name5 {
+    color: #F2EFEB;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 9rem;
+    margin-left: 27rem;
+    letter-spacing: 5px;
+}
+
+
+/*span name*/
+
+.span-text5 {
+    font-size: 40px;
+    color: #F2EFEB;
+    text-transform: uppercase;
+}
+
+
+/*info */
+
+.about5 {
+    color: #F2EFEB;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    width: 55rem;
+    position: absolute;
+    margin-top: 24rem;
+    margin-left: 18rem;
+    letter-spacing: 5px;
+}

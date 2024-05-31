@@ -1,0 +1,42 @@
+<%- include('layouts/head.ejs')%>
+
+    <body>
+        <!--used to include navigation.ejs-->
+        <%- include('./layouts/navigation_admin.ejs')%>
+
+            <!-- Page Content -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p>
+                                    Product:
+                                    <%= prod.product %>
+                                </p>
+
+                                <p><img src="<%= prod.imageURL%>" /></p>
+                                <p>
+                                    Price: ₱
+                                    <%= prod.price %>
+                                </p>
+                                <p>
+                                    Volume:
+                                    <%= prod.volume %> ml
+                                </p>
+                                <p>
+                                    Brand:
+                                    <%= prod.brand %>
+                                </p>
+                                <p>
+                                    SKU:
+                                    <%= prod.sku %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--used to include end.ejs-->
+            <%- include('layouts/end.ejs')%>
