@@ -1,0 +1,112 @@
+<!--head.js used to store head design-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= pageTitle%>
+    </title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/navbar.css" rel="stylesheet">
+    <link href="/css/brandy.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <div class="container">
+        <%- include('../layouts/navigation.ejs')%>
+
+        <!--1st section-->
+        <section class="first-section">
+            <div class="sec1-content">
+                <img class="sec1-img1" src="/images/alfonso-light.png">
+                <h1 class="sec1-text1"> get drnk with <br><span class="span-text1">with some light</span></h1>
+            </div>
+        </section>
+
+
+        <!--2nd section-->
+        <section class="second-section">
+            <div class="sec2-content">
+                <img class="sec2-img1" src="/images/img-bar1.jpg">
+                <img class="sec2-img2" src="/images/img-bar2.jpg">
+                <img class="sec2-img3" src="/images/img-bar3.jpg">
+            </div>
+        </section>
+
+
+        <!--3rd section-->
+        <section class="third-section">
+            <div class="sec3-content">
+                <img class="sec3-img1" src="/images/emperador-light.png">
+                <p class="sec3-text1"> You don't miss your ex, <br>it's just <span class="span-text2">brandy</span></p>
+            </div>
+        </section>
+
+
+        <!--4th section-->
+        <section class="fourth-section">
+            <div class="sec4-content">
+                <img class="sec4-img1" src="/images/emperador-coffee.png">
+                <h1 class="sec4-text1"> Every Good Day <br> Starts with a <br>Coffee</h1>
+            </div>
+        </section>
+
+
+        <!--5th section-->
+        <section class="blog">
+            <div class="blog-heading">
+                <h3 id="blog">Events</h3>
+            </div>
+
+            <div class="blog-container">
+
+                <!--blog1-->
+                <div class="blog-box">
+                    <div class="blog-img">
+                        <img src="/images/confe1.jpg">
+                    </div>
+
+                    <div class="blog-text">
+                        <span class="blog-span">Drnk Enters into Distribution Deal With Singapore</span>
+                        <br><a href="#" class="blog-link">Read More</a>
+                        <p>May 08, 2022</p>
+                    </div>
+                </div>
+
+                <!--blog2-->
+                <div class="blog-box">
+                    <div class="blog-img">
+                        <img src="/images/confe2.jpg">
+                    </div>
+
+                    <div class="blog-text">
+                        <span class="blog-span">Tanduay Declared World's Number One Rum of the Year</span>
+                        <br><a href="#" class="blog-link">Read More</a>
+                        <p>Jan 07, 2022</p>
+                    </div>
+                </div>
+
+                <!--blog3-->
+                <div class="blog-box">
+                    <div class="blog-img">
+                        <img src="/images/confe3.jpeg">
+                    </div>
+
+                    <div class="blog-text">
+                        <span class="blog-span">Drnk's Brandy Fest Joins Major Festival in Manila</span>
+                        <br><a href="#" class="blog-link">Read More</a>
+                        <p>May 30, 2022</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div> <!--/div for .container-->
+</body>
+
+</html>

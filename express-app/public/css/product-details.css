@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #20201F;
+    min-height: 220vh;
+    width: 100%;
+    display: flex;
+}
+
+/* content div*/
+.content {
+    position: absolute;
+    display: inline-block;
+    top: 100px;
+    left: 70px;
+    width: 1288px;
+    height: 510px;
+}
+
+/* product-price*/
+.product-price {
+    display: block;
+    float: left;
+    width: 450px;
+}
+
+#product-image {
+    width: 450px;
+    height: 450px;
+}
+
+#price {
+    float: right;
+    margin-top: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: #E8E0DA;
+    letter-spacing: 2px;
+}
+
+/* info*/
+.info {
+    position: relative;
+    float: right;
+    width: 792px;
+    height: 445px;
+}
+
+#product-name {
+    float: left;
+    vertical-align: middle;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #E8E0DA;
+    letter-spacing: 2px;
+}
+
+#sum-rating {
+    float: right;
+    width: 265px;
+    padding-top: 5px;
+}
+
+.stars {
+    width: 265px;
+    height: 30px;
+}
+
+.star {
+    width: 30px;
+    height: 29px;
+    margin-left: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a #view-rating {
+    margin-top: 5px;
+    margin-left: 135px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    color: #E8E0DA;
+    letter-spacing: 1px;
+    opacity: 0.6;
+}
+
+a #view-rating:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+/* description*/
+#description-divider {
+    position: absolute;
+    top: 75px;
+    width: 780px;
+    border-top: 2px solid #E8E0DA;
+    background-color: #20201F;
+}
+
+#product-specs {
+    position: absolute;
+    top: 100px;
+    left: 205px;
+    width: auto;
+    border-spacing: 0 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #E8E0DA;
+}
+
+#product-specs th {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 1px;
+    height: 66px;
+}
+
+#product-specs td {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: right;
+}
+
+#product-specs td.category {
+    text-align: left;
+    font-style: italic;
+}
+
+/* description*/
+.quantity-container {
+    position: absolute;
+    top: 620px;
+    left: 295px;
+    width: 329px;
+    height: 88px;
+}
+
+.button {
+    position: absolute;
+    top: 10px;
+}
+
+.button.minus {
+    left: 10px;
+}
+
+.button.add {
+    left: 263px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.quantity {
+    position: absolute;
+    left: 108px;
+    top: 0px;
+    width: 115px;
+    background: none;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 700px;
+    color: #E8E0DA;
+    text-align: center;
+}
+
+
+.add-cart-btn {
+    position: absolute;
+    top: 620px;
+    left: 744px;
+    height: 90px;
+}
+
+.add-cart-btn:hover {
+    cursor: pointer;
+}
+
+/* ratings-container*/
+#ratings-container {
+    position: absolute;
+    top: 830px;
+    left: 100px;
+    width: 1366px;
+    height: 658px;
+}
+
+#ratings-title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    color: #E8E0DA;
+}
+
+.ratings-border {
+    padding-top: 1px;
+    padding-left: 1rem;
+    border-top: 1px solid #E8E0DA;
+    background-color: #20201F;
+}
+
+.ratings-list {
+    width: 1318px;
+    height: auto;
+    border-spacing: 0 40px;
+    border-collapse: separate;
+    padding-left: 69px;
+    padding-right: 24px;
+    vertical-align: middle;
+}
+
+.ratings-list .photo {
+    width: 120px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.ratings-list .photo img {
+    width: 120px;
+    height: 120px;
+}
+
+.ratings-list .log {
+    width: 200px;
+    margin: 0;
+    padding-left: 40px;
+    font-family: 'Open Sans', sans-serif;
+    color: #E8E0DA;
+}
+
+.ratings-list .log #user-name {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.ratings-list .log #time-log {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.ratings-list .feedback-post {
+    margin: 0;
+    padding-left: 40px;
+    width: 630px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #E8E0DA;
+    line-height: 24px;
+}
+
+.ratings-list .rate {
+    padding-left: 40px;
+}

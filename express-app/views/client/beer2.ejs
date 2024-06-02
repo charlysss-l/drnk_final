@@ -1,0 +1,106 @@
+<!--head.js used to store head design-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= pageTitle%>
+    </title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/navbar.css" rel="stylesheet">
+    <link href="/css/beer.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <%- include('../layouts/navigation.ejs')%>
+
+            <!--1st section-->
+            <section class="first-section">
+                <div class="sec1-content">
+                    <p class="sec1-text1">Pair Yourself <br>Some beer</p>
+
+                    <!--img on right-->
+                    <img class="sec1-img1" src="/images/sanmig-green.png">
+
+                    <!-- san mig icons-->
+                    <div class="icons">
+                        <ul>
+                            <li> <!-- icon1 -->
+                                <a href="/client/beer">
+                                    <img class="sanmig-apple" src="/images/sanmig-yellow.png">
+                                </a>
+                            </li>
+
+                            <li> <!-- icon2 -->
+                                <a href="#">
+                                    <img class="sanmig-brewed" src="/images/sanmig-green.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+            </section>
+
+
+            <!--2nd section-->
+            <section class="second-section">
+                <div class="sec2-content">
+                    <br>
+                    <!--text-->
+                    <h1> Pirate Beer </h1>
+
+                    <!-- images -->
+
+                    <img src="/images/HP-redhorse3.png" alt="Red Horse Beer" class="sec2-img2">
+                    <img src="/images/sanmig-light.png" alt="San Mig Light Beer" class="sec2-img3">
+
+                    <img src="/images/sanmig-pale-pilsen.png" alt="San Miguel Pale Pilsen Beer" class="sec2-img4">
+                    <img src="/images/tanduay-yellow.png" alt="Tanduay Ice Beer" class="sec2-img5">
+
+                </div>
+
+
+
+            </section>
+
+            <!--3rd section-->
+            <section class="third-section">
+                <div class="sec3-content">
+
+                    <!--paragraph-->
+                    <br>
+                    <p> An alcoholic beverage made by brewing and
+                        fermentation from cereals, usually malted
+                        barley, and flavored with hops and the like
+                        for a slightly bitter taste. </p>
+                </div>
+            </section>
+
+            <!--4th section-->
+            <section class="fourth-section">
+                <div class="sec4-content">
+                    <!-- image-->
+                    <img class="sec4-img1" src="/images/img5.jpg">
+                </div>
+            </section>
+
+            <!--5th section-->
+            <section class="fifth-section">
+                <div class="sec5-content">
+                    <!--text-->
+                    <h1> Sunshine Dirty Diamond </h1> <br>
+
+                    <!--images-->
+                    <img src="/images/tiger-crystal.png" alt="Tiger Crystal Beer" class="sec5-img2">
+                    <img src="/images/asahi.png" alt="Asahi Super Dry Bee" class="sec5-img3">
+                    <img src="/images/manila.png" alt="Manila Beer " class="sec5-img4">
+                    <img src="/images/erdinger.png" alt="Erdinger Weissbier Beer" class="sec5-img5">
+                </div>
+            </section>
+
+</body>
+
+</html>

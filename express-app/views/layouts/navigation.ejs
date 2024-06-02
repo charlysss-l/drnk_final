@@ -4,6 +4,20 @@
             <a class="nav_link" href="/">Home 
                     <span class="sr-only">(current)</span></a>
         </li>
+        <li class="nav_item <%= path==='/beer' ? 'active' : ''%>">
+            <a class="nav_link" href="/client/beer">Beer
+                    <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav_item <%= path==='/gin' ? 'active' : ''%>">
+            <a class="nav_link" href="/client/gin">Gin
+                    <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav_item <%= path==='/brandy' ? 'active' : ''%>">
+            <a class="nav_link" href="/client/brandy">Brandy
+                    <span class="sr-only">(current)</span></a>
+        </li>
 
         <li class="nav_item <%= path==='/shop' ? 'active' : ''%>">
             <a class="nav_link" href="/shop">Shop 

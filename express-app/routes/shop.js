@@ -18,6 +18,14 @@ router.post('/add-to-cart', shopController.addToCart);
 
 router.get('/client/cart', shopController.getCart);
 
+router.get('/client/beer', shopController.getBeer);
+
+router.get('/client/beer2', shopController.getBeer2);
+
+router.get('/client/gin', shopController.getGin);
+
+router.get('/client/brandy', shopController.getBrandy);
+
 router.post('/delete-cart', shopController.deleteInCart);
 
 

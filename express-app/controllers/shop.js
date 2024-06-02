@@ -59,6 +59,31 @@ exports.getCart = (req, res, next) => {
     //console.log(Cart.getCart());
 }
 
+exports.getBeer = (req, res, next) => {
+    const prodId = 'some-product-id';
+    res.render('client/beer', { name: "Drnk-SHOP", prods: [], path: '/beer', pageTitle: 'Beer', prodId: prodId });
+
+}
+
+exports.getBeer2 = (req, res, next) => {
+    const prodId = 'some-product-id';
+    res.render('client/beer2', { name: "Drnk-SHOP", prods: [], path: '/beer2', pageTitle: 'Beer-2nd', prodId: prodId });
+
+}
+
+exports.getGin = (req, res, next) => {
+    const prodId = 'some-product-id';
+    res.render('client/gin', { name: "Drnk-SHOP", prods: [], path: '/gin', pageTitle: 'Gin', prodId: prodId });
+
+}
+
+exports.getBrandy = (req, res, next) => {
+    const prodId = 'some-product-id';
+    res.render('client/brandy', { name: "Drnk-SHOP", prods: [], path: '/brandy', pageTitle: 'Brandy', prodId: prodId });
+
+}
+
+
 exports.deleteInCart = (req, res, next) => {
     console.log(req.body.prodId);
     Cart.delete(req.body.prodId);

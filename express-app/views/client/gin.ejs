@@ -1,0 +1,76 @@
+<!--head.js used to store head design-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= pageTitle%>
+    </title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/navbar.css" rel="stylesheet">
+    <link href="/css/gin.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+<%- include('../layouts/navigation.ejs')%>
+
+        <!--1st section-->
+        <section class="first-section">
+            <div class="sec1-content">
+                <img class="sec1-img1" src="/images/gin-bilog.png">
+                <h1 class="sec1-text1"> fun beGIN <br><span class="span-text1"> with GIN</span></h1>
+            </div>
+        </section>
+
+
+        <!--2nd section-->
+        <section class="second-section">
+            <div class="sec2-content">
+                <video src="/images/gin&tonic.mp4" muted loop autoplay></video>
+            </div>
+        </section>
+
+        <!--3rd section-->
+        <section class="third-section">
+            <div class="sec3-content">
+
+                <h1> Blue Ruin</h1>
+
+                <img src="/images/Ruin Beer_1.jpeg "
+                    class="sec3-img1">
+                <img src="/images/Ruin Beer_2.jpeg"
+                    class="sec3-img2">
+                <img src=" /images/Ruin Beer_3.jpeg"
+                    class="sec3-img3">
+                <img src="/images/Ruin Beer_4.jpeg" class="sec3-img4">
+
+            </div>
+        </section>
+
+        <!--4th section-->
+        <section class="fourth-section">
+            <div class="sec4-content">
+                <img class="sec4-img1" src="/images/img-gin1.jpg">
+                <img class="sec4-img2" src="/images/img-gin2.jpg">
+                <img class="sec4-img3" src="/images/img-gin3.jpg">
+            </div>
+        </section>
+
+        <!--5th section-->
+        <section class="fifth-section">
+            <div class="sec5-content">
+                <img class="sec5-img1" src="/images/thebar-lime.png">
+                <img class="sec5-img2" src="/images/thebar-premiumdry.png">
+                <img class="sec5-img3" src="/images/thebar-pink.png">
+                <h1 class="sec5-text1"> trust me you know <br> how to sing</h1>
+            </div>
+        </section>
+
+    </div> <!--/div for .container-->
+</body>
+
+</html>
