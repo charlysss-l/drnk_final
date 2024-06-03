@@ -18,8 +18,10 @@
     <!--1st section-->
     <section class="first-section">
         <div class="sec1-content">
-            <video src="/images/INTRO.mp4" muted loop autoplay></video>
-            <h1 class="intro-text">Get <span class="span-text1">drnk</span></h1>
+            <video src="/images/INTRO.mp4" muted loop autoplay class="video"></video>
+            <div class="overlay_text">Get
+                <span class="span-text1">drnk</span></h1>
+            </div>
 
         </div>
     </section>
@@ -27,10 +29,12 @@
     <%- include('../layouts/navigation.ejs')%>
         <!--2nd section-->
         <section class="second-section">
-            <div class="sec2-content">
+            <div class="container_second_image">
                 <img class="sec2-img2" src="/images/img1.jpg">
+            </div>
+            <div class="second_overlay_text">
                 <h1 class="sec2-text1"><a href="#">drnk</a></h1>
-                <p class="sec2-text2"> <a href="#">Shop Now</a></p>
+                <p class="sec2-text2"> <a href="/shop">Shop Now</a></p>
             </div>
         </section>
 
@@ -38,14 +42,6 @@
         <!--3rd section-->
         <section class="third-section">
             <div class="slide-container">
-
-                <!--slider link to img a-->
-                <span class="slider-span" id="slider-span1"></span>
-                <span class="slider-span" id="slider-span2"></span>
-                <span class="slider-span" id="slider-span3"></span>
-                <span class="slider-span" id="slider-span4"></span>
-                <span class="slider-span" id="slider-span5"></span>
-
 
                 <div class="image-slider">
                     <!--product1-->
@@ -100,32 +96,24 @@
                     <ul>
                         <li>
                             <!--beer icon-->
-                            <a href="#">
+                            <a href="/client/beer">
                                 <img class="icon-beer" src="/images/beer.png">
                             </a>
                         </li>
 
                         <li>
                             <!--gin icon-->
-                            <a href="#">
+                            <a href="/client/gin">
                                 <img class="icon-gin" src="/images/gin.png">
                             </a>
                         </li>
 
                         <li>
                             <!--brandy icon-->
-                            <a href="#">
+                            <a href="/client/brandy">
                                 <img class="icon-brandy" src="/images/brandy.png">
                             </a>
                         </li>
-
-                        <li>
-                            <!-- mix icon-->
-                            <a href="#">
-                                <img class="icon-mix" src="/images/mix-drinks.png">
-                            </a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </section>
