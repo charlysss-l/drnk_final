@@ -48,7 +48,7 @@
     color: #EFF5F3;
     float: left;
     position: absolute;
-    margin-top: 12rem;
+    top:30%;
     font-size: 100px;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
@@ -77,10 +77,10 @@
 
 /* image size & position */
 .second-section img {
-    width: 220px;
-    height: 350px;
-    padding: 1rem;
+    width: 260px;
+    height: 430px;
     border-radius: 10px;
+    justify-content: center;
 }
 
 /* 1st image margin*/
@@ -155,10 +155,10 @@
 
 /* image size and position*/
 .fifth-section img {
-    width: 220px;
-        height: 350px;
-        padding: 1rem;
+    width: 260px;
+        height: 430px;
         border-radius: 10px;
+        justify-content: center;
 }
 
 
