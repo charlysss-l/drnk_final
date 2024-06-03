@@ -3,58 +3,46 @@
     padding: 0;
 }
 
-
-/* brand-info*/
+/* brand-info */
 
 .intro {
     background-color: #20201F;
     width: 100%;
     display: flex;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
-
-/*get to know us*/
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .intro-title {
     color: #F2EFEB;
     font-family: 'Open Sans', sans-serif;
-    position: absolute;
     font-size: 100px;
     text-transform: uppercase;
-    margin-left: 20rem;
-    margin-top: 15rem;
+    margin-bottom: 2rem;
 }
 
-
-/* id link size and position */
+.links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+}
 
 .who-link,
 .why-link,
 .how-link {
-    position: absolute;
-    margin-top: 26rem;
     font-size: 40px;
     text-transform: uppercase;
 }
-
-
-/* id link each margin left */
-
-.who-link {
-    margin-left: 30rem;
-}
-
-.why-link {
-    margin-left: 43rem;
-}
-
-.how-link {
-    margin-left: 56rem;
-}
-
-
-/*link a */
 
 .who-link a,
 .why-link a,
@@ -62,9 +50,6 @@
     color: #F2EFEB;
     text-decoration: none;
 }
-
-
-/*link hover */
 
 .who-link a:hover,
 .why-link a:hover,
@@ -74,60 +59,66 @@
 
 
 /*  WHO section */
-
+/* brand-info1 section */
 .brand-info1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #20201F;
     width: 100%;
-    display: flex;
     height: 100vh;
 }
 
+/* who container */
+.who {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-/*title */
-
+/* title */
 .who-title {
     color: #F2EFEB;
     font-family: 'Open Sans', sans-serif;
-    position: absolute;
     font-size: 180px;
-    margin-left: 31rem;
-    margin-top: 12rem;
+    margin: 0;
 }
 
-
-/*info*/
-
+/* info */
 .who-p {
     color: #F2EFEB;
-    position: absolute;
-    margin-top: 27rem;
     font-size: 20px;
-    margin-left: 25rem;
     width: 600px;
+    margin-top: 2rem;
+    /* Add some space between the title and paragraph */
     text-align: center;
 }
-
 
 /*  WHY section*/
 
 .brand-info2 {
-    background-color: #20201F;
-    width: 100%;
     display: flex;
-    height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: #20201F;
+        width: 100%;
+        height: 100vh;
 }
 
-
+.why{
+    text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
 /*title */
 
 .why-title {
     color: #F2EFEB;
-    font-family: 'Open Sans', sans-serif;
-    position: absolute;
-    font-size: 180px;
-    margin-left: 33rem;
-    margin-top: 12rem;
-    text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 180px;
+        margin: 0;
 }
 
 
@@ -135,35 +126,38 @@
 
 .why-p {
     color: #F2EFEB;
-    position: absolute;
-    margin-top: 27rem;
-    font-size: 20px;
-    margin-left: 25rem;
-    width: 720px;
-    text-align: center;
+        font-size: 20px;
+        width: 600px;
+        margin-top: 2rem;
+        /* Add some space between the title and paragraph */
+        text-align: center;
 }
 
 
 /*HOW section*/
 
 .brand-info3 {
-    background-color: #20201F;
-    width: 100%;
-    display: flex;
-    height: 100vh;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #20201F;
+            width: 100%;
+            height: 100vh;
 }
 
-
+.how{
+    text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
 /*title */
 
 .how-title {
-    color: #F2EFEB;
+color: #F2EFEB;
     font-family: 'Open Sans', sans-serif;
-    position: absolute;
     font-size: 180px;
-    margin-left: 33rem;
-    margin-top: 12rem;
-    text-transform: uppercase;
+    margin: 0;
 }
 
 
@@ -171,12 +165,11 @@
 
 .how-p {
     color: #F2EFEB;
-    position: absolute;
-    margin-top: 27rem;
-    font-size: 20px;
-    margin-left: 25rem;
-    width: 720px;
-    text-align: center;
+        font-size: 20px;
+        width: 600px;
+        margin-top: 2rem;
+        /* Add some space between the title and paragraph */
+        text-align: center;
 }
 
 
