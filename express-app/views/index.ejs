@@ -1,44 +1,55 @@
-<%- include('layouts/head.ejs')%>
+<!DOCTYPE html>
+<html>
 
-    <body>
-        <%- include('./layouts/navigation.ejs')%>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= pageTitle %>
+    </title>
+    <link href="/css/navbar.css" rel="stylesheet">
+    <link href="/css/home.css" rel="stylesheet">
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
+<body>
+    <%- include('./layouts/navigation.ejs') %>
 
-            <!-- Page Content -->
-            <div class="container ">
-
-
-                <div class="col-lg-9">
-
-                    <div class="row">
-                        <% for(let p of prods) {%>
-
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card h-100 ">
-                                    <a href="# "><img class="card-img-top " src="<%= p.imageURL%>" alt=" "></a>
-                                    <div class="card-footer ">
-                                        <h4 class="card-title">
-                                            <a href="/products/<%=p.id%>">
-                                                <%= p.product%>
-                                            </a>
-                                        </h4>
-                                        <h5>₱
-                                            <%= p.price %>
-                                        </h5>
-                                        <form action="/add-to-cart" method="POST">
-                                            <input type="hidden" name="id" value="<%=p.id%>">
-                                            <button type="submit" class="btn btn-primary">Add To Cart</button>
-                                        </form>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                            <%
-                            }
-                                %>
-
-                    </div>
-                </div>
+        <!--1st section-->
+        <section class="first-section">
+            <div class="heading">
+                <h3>Shop</h3>
             </div>
-            <%- include('layouts/end.ejs')%>
+
+            <div class="container">
+                <% for(let p of prods) { %>
+                    <div class="box-items">
+                        <div class="img">
+                            <img src="<%= p.imageURL %>">
+                        </div>
+
+                        <div class="text">
+                            <span>
+                                <a href="/products/<%= p.id %>" class="p-link">
+                                    <%= p.product %>
+                                </a>
+                            </span>
+                            <p>₱ <%= p.price %>
+                            </p>
+                        </div>
+
+                        <div class="button-group">
+                            <a class="btn-details" href="/products/<%= p.id %>" role="button">Details</a>
+                            <form action="/add-to-cart" method="POST">
+                                <input type="hidden" name="id" value="<%=p.id%>">
+                                <button type="submit" class="btn-add-to-cart">Add To Cart</button>
+                            </form>
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+        </section>
+        <%- include('layouts/end.ejs') %>
+</body>
+
+</html>

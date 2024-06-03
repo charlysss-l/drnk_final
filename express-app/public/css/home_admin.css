@@ -1,0 +1,79 @@
+body {
+    font-family: sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading h3 {
+    color: #cca42e;
+    font-size: 100px;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    padding: 40px 0;
+}
+
+.image{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.btn-edit {
+    background-color: blue;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 13px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete {
+    background-color: red;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit:hover,
+.btn-delete:hover {
+    background-color: #FFFFFF;
+    color: #cca42e;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
+

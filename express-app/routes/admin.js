@@ -9,9 +9,6 @@ const router = express.Router();
 
 
 router.get('/admin', adminController.getHomePage);
-
-
-
 router.get('/add-product', adminController.getProductForm);
 
 // /admin/add-product => POST used for storing the product in the database

@@ -1,9 +1,68 @@
-<%- include('./layouts/head.ejs')%>
+<!DOCTYPE html>
+<html>
 
-    <body>
-        <%- include('./layouts/navigation_admin.ejs')%>
-            <h1>HOME--inventory</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= pageTitle %>
+    </title>
+    <link href="/css/navbar.css" rel="stylesheet">
+    <link href="/css/home_admin.css" rel="stylesheet">
+    <link href="../public/css/product_container.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-    </body>
+<body>
+    <%- include('./layouts/navigation_admin.ejs') %>
 
-    </html>
+        <!--1st section-->
+        <section class="first-section">
+            <div class="heading">
+                <h3>Inventory</h3>
+            </div>
+
+            <div class="container">
+                
+                    <main>
+                        <div class="container">
+    
+                            <div class="table-responsive">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Volume</th>
+                                    <th>Brand</th>
+                                    <th>SKU</th>
+                                    <th>Update</th>
+                                    <th>Delete</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <% for(let p of prods) { %>
+                                  <tr>
+                                    <td><img src="<%= p.imageURL %>" alt="Product 1" class="image"></td>
+                                    <td>  <%= p.product %></td>
+                                    <td>₱  <%= p.price %></td>
+                                    <td>  <%= p.volume %> ml</td>
+                                    <td> <%= p.brand %></td>
+                                    <td>  <%= p.sku %></td>
+                                    <td><a class="btn-edit" href="/admin/edit-product/<%= p.id %>" role="button">Update</a></td>
+                                    <td>  <form action="/admin/delete-product" method="POST">
+                                        <input type="hidden" name="id" value="<%= p.id %>">
+                                        <button type="submit" class="btn-delete">Delete</button>
+                                    </form></td>
+                                  </tr>
+                                  <tr>
+                                    <% } %>
+                              </table>
+                            </div>
+                        </div>
+                    </main>
+                   
+            </div>
+        </section>
+        <%- include('layouts/end.ejs') %>

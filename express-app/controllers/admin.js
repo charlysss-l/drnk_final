@@ -7,7 +7,8 @@ const Product = require('../models/product');
 
 exports.getHomePage = (req, res, next) => {
     const prodId = 'some-product-id';
-    res.render('home_admin', { name: "Drnk-SHOP", prods: [], path: '/', pageTitle: 'Home', prodId: prodId });
+    const products = Product.findAll();
+    res.render('home_admin', { name: "Drnk-SHOP", prods: products, path: '/', pageTitle: 'Home', prodId: prodId });
 }
 
 exports.getProductForm = (req, res, next) => {
@@ -31,6 +32,7 @@ exports.postProduct = (req, res, next) => {
     res.redirect('/shop-admin');
 }
 
+
 exports.editProductPage = (req, res, next) => {
     const products = Product.findById(req.params.prodId);
     res.render('edit-product', { product: products[0], path: '/', pageTitle: 'Edit Product', name: 'Liz' });
@@ -52,5 +54,5 @@ exports.editProductPost = (req, res, next) => {
 
 exports.deleteProduct = (req, res, next) => {
     Product.deleteById(req.body.id);
-    res.redirect('/shop-admin');
+    res.redirect('/admin/admin');
 }
