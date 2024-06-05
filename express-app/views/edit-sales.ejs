@@ -1,38 +1,51 @@
-<%- include('layouts/head.ejs')%>
+<!DOCTYPE html>
+<html>
 
-<body>
-    <!-- Include navigation -->
-    <%- include('./layouts/navigation_admin.ejs')%>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= pageTitle%>
+    </title>
+    <link href="/css/navbar.css" rel="stylesheet">
+    <link href="../public/css/product_container.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/form.css">
+    <link rel="stylesheet" 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-9">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h2>Edit Sales</h2>
-                        <!-- Form to edit sales -->
-                        <form action="/admin/admin-sales" method="POST">
-                            <input type="hidden" name="id" value="<%= sale.id %>">
-                            <div class="form-group">
-                                <label for="product_name">Product Name</label>
-                                <input class="form-control" id="product_name" name="product_name" value="<%= sale.product_name %>">
-                            </div>
-                            <div class="form-group">
-                                <label for="total_sales">Total Sales</label>
-                                <input class="form-control" id="total_sales" name="total_sales" value="<%= sale.total_sales %>">
-                            </div>
-                            <div class="form-group">
-                                <label for="date">Date</label>
-                                <input class="form-control" id="date" name="date" value="<%= sale.date %>">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-                        <br>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Include footer -->
-    <%- include('layouts/end.ejs')%>
+</head>
+
+    <body>
+        <!--used to include navigation.ejs-->
+        <%- include('./layouts/navigation_admin.ejs')%>
+
+          
+    <div class = "container">
+        <h2> Edit Sales </h2>
+        <form action="/admin/edit-sales/<%= sale.id %>" method="POST"> 
+            <input type="hidden" name="id" value="<%= sale.id %>">
+
+               <div class = "content">
+                   <div class = "input-box">
+                       <label for = "product_name"> Product Name: </label>
+                       <input type="text" placeholder="Enter Product Name"  id="product_name" name="product_name"  value="<%= sale.product_name %>">
+                   </div>
+                   <div class = "input-box">
+                       <label for = "total_sales"> Total Sales (in Pesos): </label>
+                       <input type="text" placeholder="Enter Total Sales" id="total_sales" name="total_sales"  value="<%= sale.total_sales %>">
+                   </div>
+                   <div class = "input-box">
+                       <label for = "date"> Date: </label>
+                       <input type="date" placeholder="Enter Date" id="date" name="date"  value="<%= sale.date %>">
+                   </div>
+     
+                   <div class="button-container"> 
+                       <button type="submit"> SUBMIT </button>
+                   </div>
+               </div>
+           </form>
+       </div>
+       
+       
+   </body>
+   </html>

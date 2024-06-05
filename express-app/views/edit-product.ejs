@@ -14,54 +14,47 @@
     <link rel="stylesheet" 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
+<body>
+    <%- include('./layouts/navigation_admin.ejs')%>
 
-    <body>
-        <!--used to include navigation.ejs-->
-        <%- include('./layouts/navigation_admin.ejs')%>
+    <div class = "container">
+        <form action="/admin/edit-product" method="POST">
+            <input type="hidden" name="id" value="<%=product.id%>">
 
-            <!-- Page Content -->
-            <div class="container">
-                <div class="row">
+            <h2> Edit Product </h2>
+            <div class = "content">
+                <div class = "input-box">
+                    <label for = "product"> Product: </label>
+                    <input type="text" placeholder="Enter Product Name" id="product" name="product" , value="<%=product.product%>" >
+                </div>
+                <div class = "input-box">
+                    <label for = "price"> Price: </label>
+                    <input type="text" placeholder="Enter Price" id="price" name="price" , value="<%=product.price%>">
+                </div>
+                <div class = "input-box">
+                    <label for = "volume"> Volume: </label>
+                    <input type="vol" placeholder="Enter Volume" id="volume" name="volume" , value="<%=product.volume%>">
+                </div>
+                <div class = "input-box">
+                    <label for = "brand"> Brand: </label>
+                    <input type="text" placeholder="Enter Brand Name" id="brand" name="brand" , value="<%=product.brand%>">
+                </div>
+                <div class = "input-box">
+                    <label for = "sku"> Stocks: </label>
+                    <input type="number" placeholder="Enter Stock" id="sku" name="sku" , value="<%=product.sku%>">
+                </div>
+                <div class = "input-box">
+                    <label for = "imageURL"> Image URL: </label>
+                    <input type="text" placeholder="Enter Image URL" id="imageURL" name="imageURL" , value="<%=product.imageURL%>">
+                </div>
 
-                    <div class="col-lg-9">
-
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <h2>Edit Product</h2>
-                                <!--Form where admin add products-->
-                                <form action="/admin/edit-product" method="POST">
-                                    <input type="hidden" name="id" value="<%=product.id%>">
-                                    <div class="form-group">
-                                        <label for="product">Edit Product</label>
-                                        <input class="form-control" id="product" name="product" , value="<%=product.product%>">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="price">Price</label>
-                                        <input class="form-control" id="price" name="price" , value="<%=product.price%>">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="volume">Volume</label>
-                                        <input class="form-control" id="volume" name="volume" , value="<%=product.volume%>">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="brand">Brand</label>
-                                        <input class="form-control" id="brand" name="brand" , value="<%=product.brand%>">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="sku">SKU</label>
-                                        <input class="form-control" id="sku" name="sku" , value="<%=product.sku%>">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="imageURL">Image URL</label>
-                                        <input class="form-control" id="imageURL" name="imageURL" , value="<%=product.imageURL%>">
-                                    </div>
-                                    <button type="submit" class="btn btn-primary ">Submit</button>
-                                </form>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
+                <div class="button-container"> 
+                    <button type="submit"> Submit </button>
                 </div>
             </div>
-            <!--used to include end.ejs-->
-            <%- include('layouts/end.ejs')%>
+        </form>
+    </div>
+    
+    
+</body>
+</html>

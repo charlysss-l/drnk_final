@@ -19,7 +19,7 @@
         <!--1st section-->
         <section class="first-section">
             <div class="heading">
-                <h3>SALES</h3>
+                <h3>Sales</h3>
             </div>
 
             <div class="container">
@@ -32,27 +32,28 @@
                                 <thead>
                                   <tr>
                                     <th>Product Name</th>
-                                    <th>Total Sales </th>
+                                    <th>Total Sales</th>
                                     <th>Date</th>
                                     <th>Update</th>
                                     <th>Delete</th>
                                   </tr>
                                 </thead>
                                 <tbody>
-                                    <% for(let s of sales) { %>
+                                  <% sales.forEach(sale => { %>
                                   <tr>
-                                    <td><img src="<%= s.imageURL %>" alt="Product 1" class="image"></td>
-                                    <td>  <%= s.product_name %></td>
-                                    <td>₱  <%= s.total_sales %></td>
-                                    <td>  <%= s.date %> ml</td>
-                                    <td><a class="btn-edit" href="/admin/edit-sales/<%= s.id %>" role="button">Update</a></td>
-                                    <td>  <form action="/admin/delete-sales" method="POST">
-                                        <input type="hidden" name="id" value="<%= s.id %>">
-                                        <button type="submit" class="btn-delete">Delete</button>
-                                    </form></td>
+                                    <td>  <%= sale.product_name %></td>
+                                    <td>₱  <%= sale.total_sales %></td>
+                                    <td>  <%= sale.date %></td>
+
+                                    <td><a href="/admin/edit-sales/<%= sale.id %>" class="btn btn-primary">Update</a>
+                                    <td>             <form action="/admin/delete-sales" method="POST" style="display:inline;">
+                                      <input type="hidden" name="id" value="<%= sale.id %>">
+                                      <button type="submit" class="btn btn-danger">Delete</button>
+                                  </form>
+  
+                                  </td>
                                   </tr>
-                                  <tr>
-                                    <% } %>
+                                  <% }) %>
                               </table>
                             </div>
                         </div>
