@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= pageTitle %>
+    </title>
+    <link href="/css/navbar.css" rel="stylesheet">
+    <link href="/css/home_admin.css" rel="stylesheet">
+    <link href="../public/css/product_container.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <%- include('./layouts/navigation_admin.ejs') %>
+
+        <!--1st section-->
+        <section class="first-section">
+            <div class="heading">
+                <h3>SALES</h3>
+            </div>
+
+            <div class="container">
+                
+                    <main>
+                        <div class="container">
+    
+                            <div class="table-responsive">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Product Name</th>
+                                    <th>Total Sales </th>
+                                    <th>Date</th>
+                                    <th>Update</th>
+                                    <th>Delete</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <% for(let s of sales) { %>
+                                  <tr>
+                                    <td><img src="<%= s.imageURL %>" alt="Product 1" class="image"></td>
+                                    <td>  <%= s.product_name %></td>
+                                    <td>₱  <%= s.total_sales %></td>
+                                    <td>  <%= s.date %> ml</td>
+                                    <td><a class="btn-edit" href="/admin/edit-sales/<%= s.id %>" role="button">Update</a></td>
+                                    <td>  <form action="/admin/delete-sales" method="POST">
+                                        <input type="hidden" name="id" value="<%= s.id %>">
+                                        <button type="submit" class="btn-delete">Delete</button>
+                                    </form></td>
+                                  </tr>
+                                  <tr>
+                                    <% } %>
+                              </table>
+                            </div>
+                        </div>
+                    </main>
+                   
+            </div>
+        </section>
+        <%- include('layouts/end.ejs') %>

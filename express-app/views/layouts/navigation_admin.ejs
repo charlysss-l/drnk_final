@@ -1,19 +1,31 @@
 <nav class="menu">
     <ul class="nav">
+
+        <li class="nav_item <%= path==='/shop-admin' ? 'active' : ''%>">
+            <a class="nav_link" href="/shop-admin">Product
+                    <span class="sr-only">(current)</span></a>
+        </li>
+        
+        <li class="nav_item <%= path==='/admin/add-product' ? 'active' : ''%>">
+            <a class="nav_link" href="/admin/add-product">Add Product 
+                    <span class="sr-only">(current)</span></a>
+        </li>
+
         <li class="nav_item <%= path==='/admin/admin' ? 'active' : ''%>">
             <a class="nav_link" href="/admin/admin">Inventory 
                     <span class="sr-only">(current)</span></a>
         </li>
 
-        <li class="nav_item <%= path==='/shop-admin' ? 'active' : ''%>">
-            <a class="nav_link" href="/shop-admin">All Products 
+        <li class="nav_item <%= path==='/admin/admin-sales' ? 'active' : ''%>">
+            <a class="nav_link" href="/admin/admin-sales">Sales 
                     <span class="sr-only">(current)</span></a>
         </li>
 
-        <li class="nav_item <%= path==='/admin/add-product' ? 'active' : ''%>">
-            <a class="nav_link" href="/admin/add-product">Add Product 
+        <li class="nav_item <%= path==='/admin/add-sales' ? 'active' : ''%>">
+            <a class="nav_link" href="/admin/add-sales">Add Sales 
                     <span class="sr-only">(current)</span></a>
         </li>
+
 
     </ul>
 </nav>

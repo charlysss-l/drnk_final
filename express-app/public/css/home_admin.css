@@ -16,6 +16,7 @@ body {
     font-size: 100px;
     text-transform: uppercase;
     letter-spacing: 30px;
+    text-align: center;
 }
 
 .container {
@@ -28,8 +29,13 @@ body {
 
 main {
     padding: 40px 0;
+    align-items: center;
 }
 
+.table{
+    align-items: center;
+    text-align: center;
+}
 .image{
     width: 80px;
     height: 80px;
@@ -46,18 +52,20 @@ main {
     text-transform: uppercase;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    align-items: center;
 }
 
 .btn-delete {
     background-color: red;
     color: #FFFFFF;
     border: none;
-    padding: 10px 10px;
+    padding: 10px 20px;
     font-size: 13px;
     cursor: pointer;
     text-transform: uppercase;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    align-items: center;
 }
 
 .btn-edit:hover,

@@ -10,7 +10,7 @@ router.get('/about', shopController.getAboutPage);
 
 router.get('/shop', shopController.getAllProducts);
 
-router.get('/shop-admin', shopController.getAllProductsAdmin);
+
 
 router.get('/products/:prodId', shopController.getProductDetails);
 
@@ -28,7 +28,7 @@ router.get('/client/brandy', shopController.getBrandy);
 
 router.post('/delete-cart', shopController.deleteInCart);
 
-
+router.get('/shop-admin', shopController.getAllProductsAdmin);
 //throw error to test error handling
 router.get('/error-demo', (req, res, next) => {
     throw new Error('This is text Error handling express');

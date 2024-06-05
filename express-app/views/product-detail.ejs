@@ -1,43 +1,50 @@
-<%- include('layouts/head.ejs')%>
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= pageTitle%>
+    </title>
+    <link href="/css/navbar.css" rel="stylesheet">
+    <link href="/css/product_details.css" rel="stylesheet">
+    <link href="../public/css/product_container.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../public/css/form.css">
+    <link rel="stylesheet" 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
     <body>
         <!--used to include navigation.ejs-->
         <%- include('./layouts/navigation_admin.ejs')%>
 
             <!-- Page Content -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9">
+            <section class="main-wrap">
+                <div class="product">
+                    <div class="image-gallery"> 
+                        <img src="<%= prod.imageURL%>" id="imageURL" alt="Product Image">
+                    </div>
+                    <div class="product-details">
+                        <div class="details">
+                            <h1> <%= prod.product %></h1>
 
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <h1>
-                                    <%= prod.product %>
-                                </h1>
-
-                                <p><img src="<%= prod.imageURL%>" /></p>
-                                <h2>Product Specification:</h2>
-                                <p>
-                                    Price: ₱
-                                    <%= prod.price %>
-                                </p>
-                                <p>
-                                    Volume:
-                                    <%= prod.volume %> ml
-                                </p>
-                                <p>
-                                    Brand:
-                                    <%= prod.brand %>
-                                </p>
-                                <p>
-                                    SKU:
-                                    <%= prod.sku %>
-                                </p>
+                            <h2>Product Specification:</h2>
+                            <div class="detail-item">
+                                <h3>Price:</h3> <h4> ₱ <%= prod.price %></h4>
                             </div>
-                                                          
+                            <div class="detail-item">
+                                <h3>Volume:</h3> <h4> <%= prod.volume %> ml</h4>
+                            </div>
+                            <div class="detail-item">
+                                <h3>Brand:</h3> <h4>  <%= prod.brand %></h4>
+                            </div>
+                            <div class="detail-item">
+                                <h3>Stocks:</h3> <h4> <%= prod.sku %></h4>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <!--used to include end.ejs-->
             <%- include('layouts/end.ejs')%>
